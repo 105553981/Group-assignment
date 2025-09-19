@@ -1,0 +1,6 @@
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding-bottom: 30px;
+}
