@@ -5,12 +5,17 @@
   padding-bottom: 30px;
 }
 
+.logo {
+  width: 150px;
+  margin-top: -34px;
+  margin-bottom: -50px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: Verdana, sans-serif;
-  font-size: 15px;
   line-height: 1.5;
   text-decoration: none;
   outline: none;
@@ -29,23 +34,179 @@
 }
 
 .navbar-item:hover {
-  background-color: rgb(12, 12, 12);
-  color: #d31919;
+  background-color: rgb(86, 216, 35);
+  color: #000000;
   padding: 33px;
 }
 
 .back-G {
-  margin-top: 30px;
+  background: #fff;
+  padding: 50px 20px;
 }
 
-.text-container {
-  background-color: #000;
-  color: white;
+.h1 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(30, 94, 30);
+
+}
+
+.hiring-container {
+  color: rgb(0, 0, 0);
   font-family: sans-serif;
   margin-top: 50px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .text-item {
   padding-top: 30px;
+}
+
+.text-item p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.text-item ul {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.text-item li {
+  margin-bottom: 8px;
+}
+
+.banner {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 50px;
+}
+
+.end-line {
+  display: block;
+  color: gray;
+  border-style: inset;
+  border-width: 1px;
+  margin: 20px;
+}
+
+.highlight {
+  color: rgb(8, 128, 8);
+}
+
+.h2 {
+  display: block;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.h2 span {
+  text-align: center;
+  color: rgb(105, 104, 104);
+  font-size: 18px;
+}
+
+.wrap-content {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-content {
+  text-align: center;
+  width: 150px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo-width {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.icon-text {
+  color: #384148;
+  font-size: 14px;
+  margin: 12px, 0px, 0px;
+}
+
+.search-wrap {
+  padding-top: 50px;
+}
+
+.text-list {
+  color: #384148;
+}
+
+.job-section {
+  padding-bottom: 80px;
+}
+
+.job-section ul {
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.job-categories ul {
+  display: inline-flex;
+  list-style-type: none;
+  padding-left: 140px;
+}
+
+#sign-up-button {
+  background-color: #000000;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: 870px;
+  margin-right: 870px;
+  color: #fff;
+  text-align: center;
+}
+
+#sign-up-button:hover {
+  background-color: green;
+  color: #000000;
+}
+
+.logo-and-appicons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.logo-and-appicons p i {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+i {
+  font-size: 30px;
+}
+
+.appicons i {
+  padding-right: 50px;
+}
+
+.ending-section {
+  padding-bottom: 40px;
+}
+
+.end-text {
+  text-align: center;
+}
+
+a .end-text p {
+  margin-top: 25px;
 }
