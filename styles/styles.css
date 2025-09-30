@@ -13,8 +13,11 @@
   font-size: 15px;
   line-height: 1.5;
   text-decoration: none;
+  /* Delete this for appearing the box in apply.html
+    outline: none;
+    border: none;
   outline: none;
-  border: none;
+  border: none; */
 }
 
 .navbar ul li {
@@ -48,4 +51,11 @@
 
 .text-item {
   padding-top: 30px;
+}
+
+.button {
+  border-color: #000;
+  border-width: 5px;
+  background-color: #000;
+  color: white;
 }
