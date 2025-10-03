@@ -1,6 +1,6 @@
 .navbar ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(14, 13, 13);
   padding-bottom: 30px;
 }
@@ -69,21 +69,25 @@
 .text-item p {
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 .text-item ul {
   margin-left: 20px;
   list-style-type: none;
+  text-align: center;
 }
 
 .text-item li {
   margin-bottom: 8px;
 }
 
-.banner {
-  flex: 1;
-  max-width: 400px;
-  border-radius: 50px;
+.banner1 {
+  margin-left: -100px;
+}
+
+.banner2 {
+  margin-right: -100px;
 }
 
 .end-line {
@@ -123,6 +127,10 @@
   margin: 20px;
   display: inline-block;
   vertical-align: top;
+}
+
+.logo-content p {
+  font-size: 20px;
 }
 
 .logo-width {
@@ -176,7 +184,7 @@
 }
 
 .colortext-button a {
-  color: #fff
+  color: white
 }
 
 #apply-button:hover {
@@ -236,8 +244,8 @@
   display: flex;
   justify-content: space-around;
   padding-top: 60px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .card1-2-3-4-5-6 {
@@ -273,6 +281,18 @@ i {
   padding-right: 50px;
 }
 
+.fb {
+  color: blue;
+}
+
+.yt {
+  color: red;
+}
+
+.ig {
+  color: rgba(241, 2, 230, 0.616);
+}
+
 .ending-section {
   padding-bottom: 40px;
 }
@@ -297,7 +317,7 @@ a .end-text p {
 
 .header-about {
   padding-top: 40px;
-  padding-left: 400px;
+  padding-left: 600px;
 }
 
 .our-group ul li {
@@ -320,7 +340,7 @@ a .end-text p {
 
 .table-container {
   padding-top: 10px;
-  padding-left: 400px;
+  padding-left: 600px;
 }
 
 table {
@@ -357,6 +377,12 @@ table {
 
 .table {
   padding-top: 35px;
+
+}
+
+.table-body2-3-4-5-6 tr th :hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .table h2 {
@@ -370,7 +396,8 @@ table {
 
 .contact p {
   padding-left: 30px;
-  margin-top: 5px;
+  margin-top: 4px;
+  font-size: 20px;
 }
 
 /* CSS of jobs Description */
