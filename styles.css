@@ -28,6 +28,22 @@
   margin-top: 20px;
 }
 
+.navbar ul li a.navbar-item.active {
+  background-color: #32cd32;
+  /* xanh lá nổi bật */
+  color: black;
+  /* chữ màu đen cho dễ đọc */
+  font-weight: bold;
+  padding-top: 22px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 32.5px;
+  /* chữ đậm */
+  /* thêm khoảng cách để giống nút */
+}
+
+
+
 .navbar-item {
   color: #fff;
   padding: 12px 16px;
@@ -303,6 +319,10 @@ i {
   color: rgba(241, 2, 230, 0.616);
 }
 
+.tiktok {
+  color: black;
+}
+
 .ending-section {
   padding-bottom: 40px;
 }
@@ -416,10 +436,112 @@ table {
 /* CSS of jobs Description */
 /* ======= */
 
-/* Apply.html */
+/* <<<<<<< HEAD */
+/* Css of about.html */
+/* Css of about.html */
+/* Css of about.html */
+/* Css of about.html */
+
+
+
+
+
+.header-about {
+  padding-top: 40px;
+  padding-left: 600px;
+}
+
+.our-group ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
+.our-group h1 {
+  color: rgb(12, 100, 12);
+}
+
+.our-group dt {
+  padding-top: 20px;
+}
+
+.our-group dd {
+  padding-left: 20px;
+}
+
+.table-container {
+  padding-top: 10px;
+  padding-left: 600px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+.table-heading1 th {
+  background-color: #ececec;
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  background-color: #c7f0db;
+}
+
+.table-body1 td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.table-body2-3-4-5 th {
+  background-color: #ececec;
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  background-color: #c7f0db;
+}
+
+.table-body2-3-4-5 td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.table {
+  padding-top: 35px;
+
+}
+
+.table-body2-3-4-5-6 tr th :hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.table h2 {
+  color: #008f4c
+}
+
+.contact {
+  padding-top: 40px;
+  display: flex;
+}
+
+.contact p {
+  padding-left: 30px;
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+/* CSS of jobs Description */
+/* CSS of jobs Description */
+/* CSS of jobs Description */
+/* CSS of jobs Description */
+/* ======= */
+
+/* Apply Page */
 .buttons {
   justify-content: center;
 }
+
 
 #submit-button {
   background-color: rgb(86, 216, 35);
@@ -445,6 +567,7 @@ table {
   padding-right: 8px;
   padding-left: 8px;
   margin: auto;
+  margin-left: 20px;
   color: #fff;
   text-align: center;
   width: 10%;
@@ -473,10 +596,29 @@ table {
   padding: 40px;
   background-color: whitesmoke;
   margin: 0 auto;
-  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
-  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 20px;
   position: relative;
   top: 50px;
 }
 
+.apply-page .form-container {
+  display: grid;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.address {
+  display: flex;
+}
+
 /* >>>>>>>e45598e0a344f025ba5e94394b908b569a1b592f */
+/* Job Description CSS
+/*
+border-inline-end {
+
+} */
