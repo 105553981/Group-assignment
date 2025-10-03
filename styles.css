@@ -28,6 +28,22 @@
   margin-top: 20px;
 }
 
+.navbar ul li a.navbar-item.active {
+  background-color: #32cd32;
+  /* xanh lá nổi bật */
+  color: black;
+  /* chữ màu đen cho dễ đọc */
+  font-weight: bold;
+  padding-top: 22px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 32.5px;
+  /* chữ đậm */
+  /* thêm khoảng cách để giống nút */
+}
+
+
+
 .navbar-item {
   color: #fff;
   padding: 12px 16px;
@@ -299,6 +315,10 @@ i {
   color: rgba(241, 2, 230, 0.616);
 }
 
+.tiktok {
+  color: black;
+}
+
 .ending-section {
   padding-bottom: 40px;
 }
@@ -543,6 +563,7 @@ table {
   padding-right: 8px;
   padding-left: 8px;
   margin: auto;
+  margin-left: 20px;
   color: #fff;
   text-align: center;
   width: 10%;
@@ -577,4 +598,23 @@ table {
   top: 50px;
 }
 
+.apply-page .form-container {
+  display: grid;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.address {
+  display: flex;
+}
+
 /* >>>>>>>e45598e0a344f025ba5e94394b908b569a1b592f */
+/* Job Description CSS
+/*
+border-inline-end {
+
+} */
