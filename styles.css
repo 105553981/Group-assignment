@@ -30,16 +30,12 @@
 
 .navbar ul li a.navbar-item.active {
   background-color: #32cd32;
-  /* xanh lá nổi bật */
   color: black;
-  /* chữ màu đen cho dễ đọc */
   font-weight: bold;
   padding-top: 22px;
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 32.5px;
-  /* chữ đậm */
-  /* thêm khoảng cách để giống nút */
 }
 
 
