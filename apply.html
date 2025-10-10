@@ -38,8 +38,8 @@
 <!-- Job Reference Number -->
       <h4 class="form-heading">Position</h4>
       <hr class="end-line-heading">
-      <label for="position-option" class="highlight"><strong>Position you are applying for</strong></label>
-      <select class="option-box" name="ref-number" id="ref-number">
+      <label for="ref-number" class="highlight"><strong>Position you are applying for</strong></label>
+      <select class="ref-number" name="ref-number" id="ref-number">
         <option value="select">Job Reference Number</option>
         <option value="0836">ML183 - Senior Machine Learning Engineer</option>
         <option value="1297">SE358 - Full-Stack Software Engineer</option>
@@ -60,18 +60,18 @@
   <!-- Last Name -->
         <p class="fill-info-container">
           <label for="last-name" class="highlight"><strong>Last Name</strong></label>
-          <input type="text" pattern="[a-zA-Z]+" name= "last-name" id="last" maxlength="20" size="20" required="required" required title="Max 20 alpha characters"/>
+          <input type="text" pattern="[a-zA-Z]+" name= "last-name" id="last-name" maxlength="20" size="20" required="required" required title="Max 20 alpha characters"/>
         </p>
       </div>
   <!-- Date of Birth -->
         <p class="fill-info-container">
-          <label for="date-of-birth" class="highlight"><strong>Date of Birth</label></strong>
+          <label for="date-of-birth" class="highlight"><strong>Date of Birth</strong></label>
           <input type="date" pattern="\d{2}/\d{2}/\d{4}" name= "date-of-birth" id="date-of-birth" maxlength="20" size="10" required="required"/>
         </p>
   <!-- Street Address -->
       <div class="address">
         <p class="fill-info-container">
-          <label for="address" class="highlight"><strong>Street Address</label></strong>
+          <label for="address" class="highlight"><strong>Street Address</strong></label>
           <input type="text" name= "address" id="address" maxlength="40" size="20" required="required" required title="Max 40 characters"/>
         </p>
   <!-- Suburb/Town -->
@@ -82,7 +82,7 @@
   <!-- State -->
         <p class="fill-info-container">
           <label for="state-selection"
-          class="highlight"><strong>State</label></strong>
+          class="highlight"><strong>State</strong></label>
           <select name="state-selection" id="state-selection">
             <option value="state-selection">Select State</option>
             <option value="VIC">VIC</option>
@@ -145,8 +145,8 @@
   <!-- Other skills -->
       <div class="other-skills">
         <div class="fill-info-container">
-          <p class="highlight"><strong>Other Skills</strong></p>
-          <textarea name= "other-skills" id="other-skills-container" rows="6" placeholder="Typing your other skills here..."></textarea>
+          <label for="other-skills" class="highlight"><strong>Other Skills</strong></label>
+          <textarea name= "other-skills" id="other-skills" rows="6" placeholder="Typing your other skills here..."></textarea>
         </div>
       </div>
     </div>
