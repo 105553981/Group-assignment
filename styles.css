@@ -607,6 +607,10 @@ table {
   display: flex;
 }
 
+#email {
+  margin-right: 94px;
+}
+
 .skills fieldset {
   padding-top: 10px;
 }
@@ -674,15 +678,18 @@ table {
     width: 100%;
   }
 
-  .gender input, .skills input {
+  .gender input,
+  .skills input {
     font-size: 18px;
     margin-top: 10px;
     width: auto;
   }
+
   .name {
     position: relative;
     top: 15px;
   }
+
   .name,
   .address,
   .contact-information {
@@ -718,6 +725,11 @@ table {
   background-color: #f5f2f2;
   padding: 40px;
   width: 30%;
+}
+
+.short-description-box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .box-title {
@@ -766,13 +778,16 @@ table {
     display: block;
     padding-bottom: 0px;
   }
+
   .summarise-job-line2 {
     display: block;
   }
+
   .short-description-box {
     width: 100%;
     margin-top: 15px;
   }
+
   .jobs-list {
     padding-left: 40px;
     padding-right: 35px;
