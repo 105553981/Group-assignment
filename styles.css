@@ -305,6 +305,10 @@ i {
   color: blue;
 }
 
+.x {
+  color: black;
+}
+
 .yt {
   color: red;
 }
@@ -315,6 +319,10 @@ i {
 
 .tiktok {
   color: black;
+}
+
+.jira {
+  color: blue;
 }
 
 .ending-section {
@@ -424,11 +432,6 @@ table {
   font-size: 20px;
 }
 
-/* CSS of jobs Description */
-/* CSS of jobs Description */
-/* CSS of jobs Description */
-/* CSS of jobs Description */
-/* ======= */
 
 /* <<<<<<< HEAD */
 /* Css of about.html */
@@ -527,6 +530,10 @@ table {
 
 
 /* Apply Page */
+/* Apply Page */
+/* Apply Page */
+/* Apply Page */
+
 .apply-box {
   max-width: 900px;
   padding: 30px;
@@ -589,6 +596,10 @@ table {
   margin-right: 13px;
 }
 
+.apply-box input:focus, .apply-box textarea:focus, .apply-box select:focus {
+  outline-color: red;
+}
+
 .address {
   display: flex;
 }
@@ -606,7 +617,7 @@ table {
 }
 
 #email {
-  margin-right: 94px;
+  margin-right: 78px;
 }
 
 .skills fieldset {
@@ -618,7 +629,7 @@ table {
 }
 
 #other-skills {
-  width:100%;
+  width: 100%;
 }
 
 #submit-button {
@@ -635,7 +646,9 @@ table {
 }
 
 #submit-button:hover {
-  color: #000000;
+  color: black;
+  background-color: #32cd32;
+
 }
 
 #reset-button {
@@ -654,7 +667,7 @@ table {
 
 #reset-button:hover {
   color: #000000;
-  background-color: #dbdbdb;
+  background-color: #929090;
 }
 
 @media (max-width: 460px) {
@@ -701,6 +714,9 @@ table {
 }
 
 /* Job Description CSS */
+/* Job Description CSS */
+/* Job Description CSS */
+/* Job Description CSS */
 
 body {
   zoom: 0.8;
@@ -732,6 +748,9 @@ body {
 .short-description-box:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+  color: white;
+  background-color: black;
+  border: 2px solid red;
 }
 
 .box-title {
@@ -742,6 +761,13 @@ body {
 .show-button {
   position: relative;
   top: 10px;
+  color: rgb(238, 72, 54);
+  padding: 5px;
+  font-weight: bold;
+}
+
+.show-button:hover {
+  color: white;
 }
 
 .jobs-list {
@@ -749,6 +775,19 @@ body {
   top: 50px;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+#senior-ml,
+#full-stack-se,
+#soc-power-management,
+#information-security,
+#ai-product-manager,
+#intern-hardware-tech {
+  color: black;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 17px;
 }
 
 .job-title {
@@ -774,6 +813,19 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.job-aside {
+  width: 25%;
+  float: right;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 30px;
+  font-size: 18px;
+  height: 500px;
+}
+
+
 
 @media (max-width: 460px) {
   .summarise-job-line1 {

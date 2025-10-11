@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apply</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -13,7 +13,9 @@
   <header>
     <div class="navbar">
       <ul>
-        <li><img class="logo" src="../Group-assignment/images/logo.png" alt="Webtech Logo"></li>
+        <li>
+          <a href="index.html"><img class="logo" src="../Group-assignment/images/logo.png" alt="Webtech Logo" /></a>
+        </li>
         <li><a href="index.html" class="navbar-item">Home</a></li>
         <li><a href="about.html" class="navbar-item">About</a></li>
         <li><a href="apply.html" class="navbar-item active">Apply</a></li>
@@ -23,11 +25,10 @@
   </header>
 
   <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-  <body class="apply-page">
-
   <section class="back-G">
     <h1 class="h1">Getting jobs at <span class="highlight">Webtech?</span></h1>
     <h2 class="h2">Just a few seconds for filling this Form</h2>
+
 <!-- Job Application -->
     <section class="apply-box">
     <div class="form-header">
@@ -35,6 +36,7 @@
       <hr>
       <h3 id="header-text">Job Application</h3>
     </div>
+
 <!-- Job Reference Number -->
       <h4 class="form-heading">Position</h4>
       <hr class="end-line-heading">
@@ -48,37 +50,44 @@
         <option value="3569">AI582 - AI Product Manager</option>
         <option value="4998">HI689 - Hardware Technology Internships</option>
       </select>
+
 <!-- Personal Information -->
       <h4 class="form-heading">Personal Information</h4>
       <hr class="end-line-heading">
       <div class="name">
+
 <!-- First Name -->
         <p class="fill-info-container">
           <label for="first-name" class="highlight"><strong>First Name</strong></label>
-          <input type="text" pattern="[a-zA-Z]+" name= "first-name" id="first-name" maxlength="20" size="20" required="required" required title="Max 20 alpha characters"/>
+          <input type="text" pattern="[a-zA-Z]+" name= "first-name" id="first-name" maxlength="20" size="20"  required title="Max 20 alpha characters">
         </p>
+
   <!-- Last Name -->
         <p class="fill-info-container">
           <label for="last-name" class="highlight"><strong>Last Name</strong></label>
-          <input type="text" pattern="[a-zA-Z]+" name= "last-name" id="last-name" maxlength="20" size="20" required="required" required title="Max 20 alpha characters"/>
+          <input type="text" pattern="[a-zA-Z]+" name= "last-name" id="last-name" maxlength="20" size="20"  required title="Max 20 alpha characters">
         </p>
       </div>
+
   <!-- Date of Birth -->
         <p class="fill-info-container">
           <label for="date-of-birth" class="highlight"><strong>Date of Birth</strong></label>
-          <input type="date" pattern="\d{2}/\d{2}/\d{4}" name= "date-of-birth" id="date-of-birth" maxlength="20" size="10" required="required"/>
+          <input type="date" name="date-of-birth" id="date-of-birth" size="10" >
         </p>
+
   <!-- Street Address -->
       <div class="address">
         <p class="fill-info-container">
           <label for="address" class="highlight"><strong>Street Address</strong></label>
-          <input type="text" name= "address" id="address" maxlength="40" size="20" required="required" required title="Max 40 characters"/>
+          <input type="text" name= "address" id="address" maxlength="40" size="20"  required title="Max 40 characters">
         </p>
+
   <!-- Suburb/Town -->
         <p class="fill-info-container">
           <label for="suburb/town" class="highlight"><strong>Suburb/Town</strong></label>
-          <input type="text" name= "suburb" id="suburb/town" maxlength="40" size="18" required="required" required title="Max 40 characters"/>
+          <input type="text" name= "suburb" id="suburb/town" maxlength="40" size="18"  required title="Max 40 characters">
         </p>
+
   <!-- State -->
         <p class="fill-info-container">
           <label for="state-selection"
@@ -95,53 +104,57 @@
             <option value="ACT">ACT</option>
           </select>
         </p>
+
   <!-- Postcode -->
         <p class="fill-info-container">
           <label for="postcode" class="highlight"><strong>Postcode</strong></label>
-          <input type="text" pattern="[0-9]{4}" name= "postcode" id="postcode" maxlength="4" size="6" required="required" required title="Exactly 4 digits"/>
+          <input type="text" pattern="[0-9]{4}" name= "postcode" id="postcode" maxlength="4" size="6"  required title="Exactly 4 digits">
         </p>
       </div>
+
   <!-- Gender -->
       <div class="gender">
-        <p class="fill-info-container">
           <fieldset>
           <legend class="highlight"><strong>Your Gender</strong></legend>
-          <input type="radio" id="male" name="gender" value="male"/>
+          <input type="radio" id="male" name="gender" value="male">
           <label for="male">Male</label>
-          <input type="radio" id="women" name="gender" value="women"/>
+          <input type="radio" id="women" name="gender" value="women">
           <label for="women">Women</label>
-          <input type="radio" id="other" name="gender" value="other"/>
+          <input type="radio" id="other" name="gender" value="other">
           <label for="other">Other</label>
           </fieldset>
-        </p>
       </div>
+
   <!-- Email -->
       <div class="contact-information">
         <p class="fill-info-container">
           <label for="email" class="highlight"><strong>Email Address</strong></label>
-          <input type="text" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name= "email" id="email" size="30" required="required"/>
+          <input type="text" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name= "email" id="email" size="30" >
         </p>
+
   <!-- Phone Number -->
         <p class="fill-info-container">
           <label for="phone-number" class="highlight"><strong>Phone Number</strong></label>
-          <input type="tel" class="phone" pattern="[0-9]{8,12}" name= "phone-number" id="phone-number" size="30" required="required" required title="8 to 12 digits, or spaces"/>
+          <input type="tel" class="phone" pattern="[0-9]{8,12}" name= "phone-number" id="phone-number" size="30"  required title="8 to 12 digits, or spaces">
         </p>
       </div>
+
   <!-- Skills -->
     <div class="skills">
-      <h4 class="form-heading"><strong>Skills</h4></strong>
+      <h4 class="form-heading"><strong>Skills</strong></h4>
       <hr class="end-line-heading">
         <fieldset>
           <legend class="highlight"><strong>Selecting skills that you have:</strong></legend>
-          <input type="checkbox" id="python" name="skills" value="python"/>
+          <input type="checkbox" id="python" name="skills" value="python">
           <label for="python">Python</label>
-          <input type="checkbox" id="java" name="skills" value="java"/>
+          <input type="checkbox" id="java" name="skills" value="java">
           <label for="java">Java</label>
-          <input type="checkbox" id="c#" name="skills" value="c#"/>
+          <input type="checkbox" id="c#" name="skills" value="c#">
           <label for="c#">C#</label>
-          <input type="checkbox" id="javascript" name="skills" value="javascript"/>
+          <input type="checkbox" id="javascript" name="skills" value="javascript">
           <label for="javascript">JavaScript</label>
         </fieldset>
+
   <!-- Other skills -->
       <div class="other-skills">
         <div class="fill-info-container">
@@ -150,20 +163,15 @@
         </div>
       </div>
     </div>
+
   <!-- Button -->
       <div class="button_container">
         <input type= "submit" id="submit-button" value="Apply">
-        <input type= "reset" id="reset-button" value="Reset"/>
+        <input type= "reset" id="reset-button" value="Reset">
       </div>
     </section>
-    </body>
-  </form>
   </section>
-</div>
-</div>
-
-
-
+<!-- Browse Jobs -->
 <div class="search-wrap">
   <div class="h2">
     <p>Start your jobs ?</p>
@@ -214,6 +222,8 @@
     </ul>
   </div>
 </div>
+
+<!-- Footer -->
 <footer class="logo-and-appicons">
   <p><strong>Download the App</strong>
     <i class="fa-brands fa-android"></i>
@@ -239,8 +249,6 @@
       of Webtech.</p>
   </div>
 </div>
-</div>
-</div>
+</form>
 </body>
-
 </html>
