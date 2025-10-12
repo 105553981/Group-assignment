@@ -2,27 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
   <title>Home Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
   <header>
-    <div class="navbar">
-      <ul>
-        <li>
-          <a href="index.html"><img class="logo" src="../Group-assignment/images/logo.png" alt="" /></a>
-        </li>
+    <nav class="navbar">
+      <div class="logo-nav">
+        <a href="index.html">
+          <img class="logo" src="../Group-assignment/images/logo.png" alt="WebTech Logo">
+        </a>
+      </div>
+
+      <ul class="nav-links">
         <li><a href="index.html" class="navbar-item active">Home</a></li>
         <li><a href="about.html" class="navbar-item">About</a></li>
         <li><a href="apply.html" class="navbar-item">Apply</a></li>
         <li><a href="jobs.html" class="navbar-item">Job Descriptions</a></li>
+        <li><a href="mailto:info@webtech.com.au" class="navbar-item">Contact Us</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <section class="back-G">
@@ -49,6 +53,9 @@
       </div>
       <img class="banner2" src="../Group-assignment/images/Banner2.png" alt="Hiring Banner">
     </div>
+    <div id="start-button">
+      <p class="colortext-button"><a href="jobs.html">Get Started</a></p>
+    </div>
     <hr class="end-line">
   </section>
   <div class="feature-section">
@@ -60,19 +67,19 @@
   </div>
   <div class="wrap-content">
     <div class="logo-content">
-      <img class="logo-width" src="../Group-assignment/images/Community" alt="">
+      <img class="logo-width" src="../Group-assignment/images/Community" alt="Community Logo">
       <p class="icon-text">Join your work community</p>
     </div>
     <div class="logo-content">
-      <img class="logo-width" src="../Group-assignment/images/apply" alt="">
+      <img class="logo-width" src="../Group-assignment/images/apply" alt="Apply Logo">
       <p class="icon-text">Find and apply to jobs</p>
     </div>
     <div class="logo-content">
-      <img class="logo-width" src="../Group-assignment/images/Company.png" alt="">
+      <img class="logo-width" src="../Group-assignment/images/Company.png" alt="Reviews Logo">
       <p class="icon-text">Search company reviews</p>
     </div>
     <div class="logo-content">
-      <img class="logo-width" src="../Group-assignment/images/salaries" alt="">
+      <img class="logo-width" src="../Group-assignment/images/salaries" alt="Salaries Logo">
       <p class="icon-text">Compare salaries</p>
     </div>
   </div>
@@ -82,42 +89,56 @@
       <span>Need some inspiration? See what millions of people are looking for on Webtech today.</span>
     </div>
   </div>
-  <div class="job-section">
-    <div class="job-categories">
-      <ul class="flexible-jobs">
-        <p class="highlight"><strong>Flexible Jobs</strong></p>
+<div class="job-section">
+  <div class="job-categories">
+
+    <div class="job-category">
+      <p class="highlight"><strong>Flexible Jobs</strong></p>
+      <ul>
         <li>Software developer work from home jobs</li>
         <li>Data entry work from home jobs</li>
         <li>Project manager work from home jobs</li>
         <li>Graphic designer work from home jobs</li>
         <li>Web developer work from home</li>
       </ul>
-      <ul class="popular-jobs">
-        <p class="highlight"><strong>Popular Jobs</strong></p>
+    </div>
+
+    <div class="job-category">
+      <p class="highlight"><strong>Popular Jobs</strong></p>
+      <ul>
         <li>Software Engineer</li>
         <li>Full Stack Developer</li>
         <li>Computer Science</li>
         <li>Cybersecurity</li>
         <li>AI</li>
       </ul>
-      <ul class="city-jobs">
-        <p class="highlight"><strong>Browse by City</strong></p>
+    </div>
+
+    <div class="job-category">
+      <p class="highlight"><strong>Browse by City</strong></p>
+      <ul>
         <li>Melbourne</li>
         <li>California</li>
         <li>Da Nang</li>
         <li>Ha Noi</li>
         <li>Ho Chi Minh</li>
       </ul>
-      <ul class="company-jobs">
-        <p class="highlight"><strong>Browse Jobs by Company</strong></p>
+    </div>
+
+    <div class="job-category">
+      <p class="highlight"><strong>Browse Jobs by Company</strong></p>
+      <ul>
         <li>Microsoft</li>
         <li>Apple</li>
         <li>Google</li>
         <li>Facebook</li>
         <li>Amazon</li>
       </ul>
-      <ul class="job-bowls">
-        <p class="highlight"><strong>Popular Bowls™</strong></p>
+    </div>
+
+    <div class="job-category">
+      <p class="highlight"><strong>Popular Bowls™</strong></p>
+      <ul>
         <li>Mobile App Developer</li>
         <li>Data Scientist</li>
         <li>AI Researcher</li>
@@ -125,7 +146,9 @@
         <li>Network Engineer</li>
       </ul>
     </div>
+
   </div>
+</div>
 
   <div class="h2">
     <p class="title">Your Community is Waiting <img src="../Group-assignment/images/party-4625237_1280.webp" width="25"
@@ -200,7 +223,9 @@
           <p>Connect with experts, partners, and participate in impactful projects to enhance your professional value.
           </p>
         </div>
+      </div>
     </section>
+    </div>
 
     <footer class="logo-and-appicons">
       <p><strong>Download the App</strong>
@@ -217,6 +242,7 @@
         <a class="tiktok" href="https://www.tiktok.com/@david.webdeveloper?is_from_webapp=1&sender_device=pc">
           <i class="fa-brands fa-tiktok"></i></a>
       </div>
+
     </footer>
     <div class="ending-section">
       <hr class="end-line">
