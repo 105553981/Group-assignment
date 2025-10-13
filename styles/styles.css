@@ -1,4 +1,3 @@
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -331,48 +330,40 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== Footer Section ===== */
 .logo-and-appicons {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 275px;
+  background-color: #ffffff;
+}
+
+.logo-and-appicons p {
+  font-size: 18px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 2%;
+}
+
+.appicons {
+  display: flex;
+  gap: 25px;
   justify-content: space-around;
-  padding-top: 80px;
-  padding-bottom: 40px;
 }
 
-.logo-and-appicons p i {
-  padding-right: 20px;
-  padding-left: 20px;
+.appicons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-i {
-  font-size: 30px;
-}
-
-.appicons i {
-  padding-right: 50px;
-}
-
-.fb {
-  color: blue;
-}
-
-.x {
-  color: black;
-}
-
-.yt {
-  color: red;
-}
-
-.ig {
-  color: rgba(241, 2, 230, 0.616);
-}
-
-.tiktok {
-  color: black;
-}
-
-.jira {
-  color: blue;
+.appicons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .ending-section {
@@ -387,15 +378,94 @@ a .end-text p {
   margin-top: 25px;
 }
 
-/* <<<<<<< HEAD */
-/* Css of about.html */
-/* Css of about.html */
-/* Css of about.html */
-/* Css of about.html */
+@media (max-width: 460px) {
+  .hiring-container {
+    display: block;
+    text-align: center;
+  }
+
+  .banner1,
+  .banner2 {
+    display: none;
+  }
+
+  .text-item ul {
+    margin-left: 0;
+  }
+
+  #start-button,
+  #apply-button {
+    width: 50%;
+  }
+
+  .wrap-content {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .logo-content {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .job-categories {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .job-category {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .bowl-category {
+    margin-left: -112px;
+  }
+
+  .employee-feedback {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .feedback {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .benefit-card-line1,
+  .benefit-card-line2 {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .benefit-card-line2 {
+    padding-top: 0px;
+  }
+  .card1-2-3-4-5-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logo-and-appicons {
+    display: block;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo-and-appicons p {
+    gap: 90px;
+    margin-bottom: 30px;
+    width: 6%;
+    margin-left: 50px;
+  }
+}
 
 
-
-
+/* Css of about.html */
 
 .header-about {
   padding-top: 40px;
@@ -484,13 +554,6 @@ table {
 
 
 /* Css of about.html */
-/* Css of about.html */
-/* Css of about.html */
-/* Css of about.html */
-
-
-
-
 
 .header-about {
   padding-top: 40px;
@@ -582,9 +645,29 @@ tbody tr:hover {
   transition: background-color 0.3s ease;
 }
 
-/* Apply Page */
-/* Apply Page */
-/* Apply Page */
+@media (max-width: 1023px) {
+  .header-about {
+    padding-left: 20px;
+  }
+
+  .table-container {
+    padding-left: 20px;
+  }
+
+  table {
+    width: 95%;
+  }
+  .contact {
+    margin-left: 55px;
+    display: block;
+  }
+  .our-group ul li {
+    margin-right: 5px;
+  }
+  .ending-section {
+    margin: 15px;
+  }
+}
 /* Apply Page */
 
 .apply-box {
@@ -769,9 +852,6 @@ tbody tr:hover {
 }
 
 /* Job Description CSS */
-/* Job Description CSS */
-/* Job Description CSS */
-/* Job Description CSS */
 
 body {
   zoom: 0.8;
@@ -816,7 +896,7 @@ body {
 .show-button {
   position: relative;
   top: 10px;
-  color: rgb(238, 72, 54);
+  color: blue;
   padding: 5px;
   font-weight: bold;
 }
@@ -874,9 +954,9 @@ body {
   float: right;
   border: 2px solid red;
   border-radius: 10px;
-  padding: 20px;
+  padding: 16px;
   margin-left: 30px;
-  font-size: 18px;
+  font-size: 17px;
   height: 500px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
@@ -900,7 +980,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1023px) {
   .summarise-job-line1 {
     display: block;
     padding-bottom: 0px;
@@ -916,8 +996,8 @@ body {
   }
 
   .jobs-list {
-    padding-left: 40px;
-    padding-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-align: justify;
   }
 
