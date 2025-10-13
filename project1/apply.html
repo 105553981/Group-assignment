@@ -1,277 +1,277 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apply</title>
-  <link rel="stylesheet" href="../styles/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo-nav">
-        <a href="index.html">
-          <img class="logo" src="../images/logo.png" alt="WebTech Logo">
-        </a>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-nav">
+          <a href="index.html">
+            <img class="logo" src="../images/logo.png" alt="WebTech Logo">
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="navbar-item">Home</a></li>
+          <li><a href="about.html" class="navbar-item">About</a></li>
+          <li><a href="apply.html" class="navbar-item active">Apply</a></li>
+          <li><a href="jobs.html" class="navbar-item">Job Descriptions</a></li>
+          <li><a href="mailto:info@webtech.com.au" class="navbar-item">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+    <section class="back-G">
+      <h1 class="h1">Getting jobs at <span class="highlight">Webtech?</span></h1>
+      <h2 class="h2">Just a few seconds for filling this Form</h2>
+
+  <!-- Job Application -->
+      <section class="apply-box">
+      <div class="form-header">
+        <img class="form-logo" src="../images/logo.png" alt="Webtech Logo">
+        <hr>
+        <h3 id="header-text">Job Application</h3>
       </div>
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="navbar-item">Home</a></li>
-        <li><a href="about.html" class="navbar-item">About</a></li>
-        <li><a href="apply.html" class="navbar-item active">Apply</a></li>
-        <li><a href="jobs.html" class="navbar-item">Job Descriptions</a></li>
-        <li><a href="mailto:info@webtech.com.au" class="navbar-item">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Job Reference Number -->
+        <h4 class="form-heading">Position</h4>
+        <hr class="end-line-heading">
+        <label for="ref-number" class="highlight"><strong>Position you are applying for</strong></label>
+        <select class="ref-number" name="ref-number" id="ref-number">
+          <option value="select">Job Reference Number</option>
+          <option value="0836">ML183 - Senior Machine Learning Engineer</option>
+          <option value="1297">SE358 - Full-Stack Software Engineer</option>
+          <option value="2391">SE490 - Software Engineer - SoC Power Management</option>
+          <option value="3337">IS511 - Systems Software Engineer, Information Security</option>
+          <option value="3569">AI582 - AI Product Manager</option>
+          <option value="4998">HI689 - Hardware Technology Internships</option>
+        </select>
 
-  <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-  <section class="back-G">
-    <h1 class="h1">Getting jobs at <span class="highlight">Webtech?</span></h1>
-    <h2 class="h2">Just a few seconds for filling this Form</h2>
+  <!-- Personal Information -->
+        <h4 class="form-heading">Personal Information</h4>
+        <hr class="end-line-heading">
+        <div class="name">
 
-<!-- Job Application -->
-    <section class="apply-box">
-    <div class="form-header">
-      <img class="form-logo" src="../images/logo.png" alt="Webtech Logo">
-      <hr>
-      <h3 id="header-text">Job Application</h3>
-    </div>
+  <!-- First Name -->
+          <p class="fill-info-container">
+            <label for="first-name" class="highlight"><strong>First Name</strong></label>
+            <input type="text" pattern="[a-zA-Z]+" name= "first-name" id="first-name" maxlength="20" size="20"  required title="Max 20 alpha characters">
+          </p>
 
-<!-- Job Reference Number -->
-      <h4 class="form-heading">Position</h4>
-      <hr class="end-line-heading">
-      <label for="ref-number" class="highlight"><strong>Position you are applying for</strong></label>
-      <select class="ref-number" name="ref-number" id="ref-number">
-        <option value="select">Job Reference Number</option>
-        <option value="0836">ML183 - Senior Machine Learning Engineer</option>
-        <option value="1297">SE358 - Full-Stack Software Engineer</option>
-        <option value="2391">SE490 - Software Engineer - SoC Power Management</option>
-        <option value="3337">IS511 - Systems Software Engineer, Information Security</option>
-        <option value="3569">AI582 - AI Product Manager</option>
-        <option value="4998">HI689 - Hardware Technology Internships</option>
-      </select>
+    <!-- Last Name -->
+          <p class="fill-info-container">
+            <label for="last-name" class="highlight"><strong>Last Name</strong></label>
+            <input type="text" pattern="[a-zA-Z]+" name= "last-name" id="last-name" maxlength="20" size="20"  required title="Max 20 alpha characters">
+          </p>
+        </div>
 
-<!-- Personal Information -->
-      <h4 class="form-heading">Personal Information</h4>
-      <hr class="end-line-heading">
-      <div class="name">
+    <!-- Date of Birth -->
+          <p class="fill-info-container">
+            <label for="date-of-birth" class="highlight"><strong>Date of Birth</strong></label>
+            <input type="date" name="date-of-birth" id="date-of-birth" size="10" >
+          </p>
 
-<!-- First Name -->
-        <p class="fill-info-container">
-          <label for="first-name" class="highlight"><strong>First Name</strong></label>
-          <input type="text" pattern="[a-zA-Z]+" name= "first-name" id="first-name" maxlength="20" size="20"  required title="Max 20 alpha characters">
-        </p>
+    <!-- Street Address -->
+        <div class="address">
+          <p class="fill-info-container">
+            <label for="address" class="highlight"><strong>Street Address</strong></label>
+            <input type="text" name= "address" id="address" maxlength="40" size="20"  required title="Max 40 characters">
+          </p>
 
-  <!-- Last Name -->
-        <p class="fill-info-container">
-          <label for="last-name" class="highlight"><strong>Last Name</strong></label>
-          <input type="text" pattern="[a-zA-Z]+" name= "last-name" id="last-name" maxlength="20" size="20"  required title="Max 20 alpha characters">
-        </p>
-      </div>
+    <!-- Suburb/Town -->
+          <p class="fill-info-container">
+            <label for="suburb/town" class="highlight"><strong>Suburb/Town</strong></label>
+            <input type="text" name= "suburb" id="suburb/town" maxlength="40" size="18"  required title="Max 40 characters">
+          </p>
 
-  <!-- Date of Birth -->
-        <p class="fill-info-container">
-          <label for="date-of-birth" class="highlight"><strong>Date of Birth</strong></label>
-          <input type="date" name="date-of-birth" id="date-of-birth" size="10" >
-        </p>
+    <!-- State -->
+          <p class="fill-info-container">
+            <label for="state-selection"
+            class="highlight"><strong>State</strong></label>
+            <select name="state-selection" id="state-selection">
+              <option value="state-selection">Select State</option>
+              <option value="VIC">VIC</option>
+              <option value="NSW">NSW</option>
+              <option value="QLD">QLD</option>
+              <option value="NT">NT</option>
+              <option value="WA">WA</option>
+              <option value="SA">SA</option>
+              <option value="TAS">TAS</option>
+              <option value="ACT">ACT</option>
+            </select>
+          </p>
 
-  <!-- Street Address -->
-      <div class="address">
-        <p class="fill-info-container">
-          <label for="address" class="highlight"><strong>Street Address</strong></label>
-          <input type="text" name= "address" id="address" maxlength="40" size="20"  required title="Max 40 characters">
-        </p>
+    <!-- Postcode -->
+          <p class="fill-info-container">
+            <label for="postcode" class="highlight"><strong>Postcode</strong></label>
+            <input type="text" pattern="[0-9]{4}" name= "postcode" id="postcode" maxlength="4" size="6"  required title="Exactly 4 digits">
+          </p>
+        </div>
 
-  <!-- Suburb/Town -->
-        <p class="fill-info-container">
-          <label for="suburb/town" class="highlight"><strong>Suburb/Town</strong></label>
-          <input type="text" name= "suburb" id="suburb/town" maxlength="40" size="18"  required title="Max 40 characters">
-        </p>
+    <!-- Gender -->
+        <div class="gender">
+            <fieldset>
+            <legend class="highlight"><strong>Your Gender</strong></legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="women" name="gender" value="women">
+            <label for="women">Women</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            </fieldset>
+        </div>
 
-  <!-- State -->
-        <p class="fill-info-container">
-          <label for="state-selection"
-          class="highlight"><strong>State</strong></label>
-          <select name="state-selection" id="state-selection">
-            <option value="state-selection">Select State</option>
-            <option value="VIC">VIC</option>
-            <option value="NSW">NSW</option>
-            <option value="QLD">QLD</option>
-            <option value="NT">NT</option>
-            <option value="WA">WA</option>
-            <option value="SA">SA</option>
-            <option value="TAS">TAS</option>
-            <option value="ACT">ACT</option>
-          </select>
-        </p>
+    <!-- Email -->
+        <div class="contact-information">
+          <p class="fill-info-container">
+            <label for="email" class="highlight"><strong>Email Address</strong></label>
+            <input type="text" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name= "email" id="email" size="30" >
+          </p>
 
-  <!-- Postcode -->
-        <p class="fill-info-container">
-          <label for="postcode" class="highlight"><strong>Postcode</strong></label>
-          <input type="text" pattern="[0-9]{4}" name= "postcode" id="postcode" maxlength="4" size="6"  required title="Exactly 4 digits">
-        </p>
-      </div>
+    <!-- Phone Number -->
+          <p class="fill-info-container">
+            <label for="phone-number" class="highlight"><strong>Phone Number</strong></label>
+            <input type="tel" class="phone" pattern="[0-9]{8,12}" name= "phone-number" id="phone-number" size="30"  required title="8 to 12 digits, or spaces">
+          </p>
+        </div>
 
-  <!-- Gender -->
-      <div class="gender">
+    <!-- Skills -->
+      <div class="skills">
+        <h4 class="form-heading"><strong>Skills</strong></h4>
+        <hr class="end-line-heading">
           <fieldset>
-          <legend class="highlight"><strong>Your Gender</strong></legend>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="women" name="gender" value="women">
-          <label for="women">Women</label>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Other</label>
+            <legend class="highlight"><strong>Selecting skills that you have:</strong></legend>
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" name="skills" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="c#" name="skills" value="c#">
+            <label for="c#">C#</label>
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">JavaScript</label>
           </fieldset>
-      </div>
 
-  <!-- Email -->
-      <div class="contact-information">
-        <p class="fill-info-container">
-          <label for="email" class="highlight"><strong>Email Address</strong></label>
-          <input type="text" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name= "email" id="email" size="30" >
-        </p>
-
-  <!-- Phone Number -->
-        <p class="fill-info-container">
-          <label for="phone-number" class="highlight"><strong>Phone Number</strong></label>
-          <input type="tel" class="phone" pattern="[0-9]{8,12}" name= "phone-number" id="phone-number" size="30"  required title="8 to 12 digits, or spaces">
-        </p>
-      </div>
-
-  <!-- Skills -->
-    <div class="skills">
-      <h4 class="form-heading"><strong>Skills</strong></h4>
-      <hr class="end-line-heading">
-        <fieldset>
-          <legend class="highlight"><strong>Selecting skills that you have:</strong></legend>
-          <input type="checkbox" id="python" name="skills" value="python">
-          <label for="python">Python</label>
-          <input type="checkbox" id="java" name="skills" value="java">
-          <label for="java">Java</label>
-          <input type="checkbox" id="c#" name="skills" value="c#">
-          <label for="c#">C#</label>
-          <input type="checkbox" id="javascript" name="skills" value="javascript">
-          <label for="javascript">JavaScript</label>
-        </fieldset>
-
-  <!-- Other skills -->
-      <div class="other-skills">
-        <div class="fill-info-container">
-          <label for="other-skills" class="highlight"><strong>Other Skills</strong></label>
-          <textarea name= "other-skills" id="other-skills" rows="6" placeholder="Typing your other skills here..."></textarea>
+    <!-- Other skills -->
+        <div class="other-skills">
+          <div class="fill-info-container">
+            <label for="other-skills" class="highlight"><strong>Other Skills</strong></label>
+            <textarea name= "other-skills" id="other-skills" rows="6" placeholder="Typing your other skills here..."></textarea>
+          </div>
         </div>
       </div>
-    </div>
 
-  <!-- Button -->
-      <div class="button_container">
-        <input type= "submit" id="submit-button" value="Apply">
-        <input type= "reset" id="reset-button" value="Reset">
-      </div>
+    <!-- Button -->
+        <div class="button_container">
+          <input type= "submit" id="submit-button" value="Apply">
+          <input type= "reset" id="reset-button" value="Reset">
+        </div>
+      </section>
     </section>
-  </section>
-<!-- Browse Jobs -->
-<div class="search-wrap">
-  <div class="h2">
-    <p>Start your jobs ?</p>
-    <span>Need some inspiration? See what millions of people are looking for on Webtech today.</span>
+  <!-- Browse Jobs -->
+  <div class="search-wrap">
+    <div class="h2">
+      <p>Start your jobs ?</p>
+      <span>Need some inspiration? See what millions of people are looking for on Webtech today.</span>
+    </div>
   </div>
-</div>
-<div class="job-section">
-  <div class="job-categories">
+  <div class="job-section">
+    <div class="job-categories">
 
-    <div class="job-category">
-      <p class="highlight"><strong>Flexible Jobs</strong></p>
-      <ul>
-        <li>Software developer work from home jobs</li>
-        <li>Data entry work from home jobs</li>
-        <li>Project manager work from home jobs</li>
-        <li>Graphic designer work from home jobs</li>
-        <li>Web developer work from home</li>
-      </ul>
-    </div>
-
-    <div class="job-category">
-      <p class="highlight"><strong>Popular Jobs</strong></p>
-      <ul>
-        <li>Software Engineer</li>
-        <li>Full Stack Developer</li>
-        <li>Computer Science</li>
-        <li>Cybersecurity</li>
-        <li>AI</li>
-      </ul>
-    </div>
-
-    <div class="job-category">
-      <p class="highlight"><strong>Browse by City</strong></p>
-      <ul>
-        <li>Melbourne</li>
-        <li>California</li>
-        <li>Da Nang</li>
-        <li>Ha Noi</li>
-        <li>Ho Chi Minh</li>
-      </ul>
-    </div>
-
-    <div class="job-category">
-      <p class="highlight"><strong>Browse Jobs by Company</strong></p>
-      <ul>
-        <li>Microsoft</li>
-        <li>Apple</li>
-        <li>Google</li>
-        <li>Facebook</li>
-        <li>Amazon</li>
-      </ul>
-    </div>
-
-    <div class="job-category">
-      <div class="bowl-category">
-      <p class="highlight"><strong>Popular Bowls™</strong></p>
-      <ul>
-        <li>Mobile App Developer</li>
-        <li>Data Scientist</li>
-        <li>AI Researcher</li>
-        <li>Help Desk</li>
-        <li>Network Engineer</li>
-      </ul>
-    </div>
+      <div class="job-category">
+        <p class="highlight"><strong>Flexible Jobs</strong></p>
+        <ul>
+          <li>Software developer work from home jobs</li>
+          <li>Data entry work from home jobs</li>
+          <li>Project manager work from home jobs</li>
+          <li>Graphic designer work from home jobs</li>
+          <li>Web developer work from home</li>
+        </ul>
       </div>
 
+      <div class="job-category">
+        <p class="highlight"><strong>Popular Jobs</strong></p>
+        <ul>
+          <li>Software Engineer</li>
+          <li>Full Stack Developer</li>
+          <li>Computer Science</li>
+          <li>Cybersecurity</li>
+          <li>AI</li>
+        </ul>
+      </div>
+
+      <div class="job-category">
+        <p class="highlight"><strong>Browse by City</strong></p>
+        <ul>
+          <li>Melbourne</li>
+          <li>California</li>
+          <li>Da Nang</li>
+          <li>Ha Noi</li>
+          <li>Ho Chi Minh</li>
+        </ul>
+      </div>
+
+      <div class="job-category">
+        <p class="highlight"><strong>Browse Jobs by Company</strong></p>
+        <ul>
+          <li>Microsoft</li>
+          <li>Apple</li>
+          <li>Google</li>
+          <li>Facebook</li>
+          <li>Amazon</li>
+        </ul>
+      </div>
+
+      <div class="job-category">
+        <div class="bowl-category">
+        <p class="highlight"><strong>Popular Bowls™</strong></p>
+        <ul>
+          <li>Mobile App Developer</li>
+          <li>Data Scientist</li>
+          <li>AI Researcher</li>
+          <li>Help Desk</li>
+          <li>Network Engineer</li>
+        </ul>
+      </div>
+        </div>
+
+    </div>
   </div>
-</div>
 
 
-<!-- Footer -->
-<footer class="logo-and-appicons">
-  <p><strong>Download the App</strong>
-    <img src="../images/android-brands-solid.svg" alt="Android"></img>
-    <img src="../images/apple-brands-solid.svg" alt="Apple"></img>
-  </p>
-  <div class="appicons">
-    <a
-    href="https://www.facebook.com/mam.man.948494?mibextid=wwXIfr&rdid=yAqTP6CN8SHfQtMB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17GbHqWPLY%2F%3Fmibextid%3DwwXIfr#"><img class="fb" src="../images/facebook-brands-solid.svg"alt="Facebook"></a>
-    <a href="https://x.com/swinburne"><img class="x" src="../images/x-twitter-brands-solid.svg" alt="X"></img></a>
-    <a href="https://www.youtube.com/@AquibRahmani"><img class="yt" src="../images/youtube-brands-solid.svg" alt="YouTube"></a>
-    <a href="https://www.instagram.com/swinburne/"><img class="ig" src="../images/instagram-brands-solid.svg" alt="Instagram"></a>
-    <a href="https://www.tiktok.com/@david.webdeveloper?is_from_webapp=1&sender_device=pc"><img class="tiktok" src="../images/tiktok-brands-solid.svg" alt="TikTok"></a>
-    <a href="https://nguyenhungthinh.atlassian.net/jira/software/projects/SCRUM/summary"><img class="jira" src="../images/jira-brands-solid.svg" alt="Jira"></a>
+  <!-- Footer -->
+  <footer class="logo-and-appicons">
+    <p><strong>Download the App</strong>
+      <img src="../images/android-brands-solid.svg" alt="Android">
+      <img src="../images/apple-brands-solid.svg" alt="Apple">
+    </p>
+    <div class="appicons">
+      <a
+      href="https://www.facebook.com/mam.man.948494?mibextid=wwXIfr&rdid=yAqTP6CN8SHfQtMB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17GbHqWPLY%2F%3Fmibextid%3DwwXIfr#"><img class="fb" src="../images/facebook-brands-solid.svg" alt="Facebook"></a>
+      <a href="https://x.com/swinburne"><img class="x" src="../images/x-twitter-brands-solid.svg" alt="X"></a>
+      <a href="https://www.youtube.com/@AquibRahmani"><img class="yt" src="../images/youtube-brands-solid.svg" alt="YouTube"></a>
+      <a href="https://www.instagram.com/swinburne/"><img class="ig" src="../images/instagram-brands-solid.svg" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@david.webdeveloper?is_from_webapp=1&sender_device=pc"><img class="tiktok" src="../images/tiktok-brands-solid.svg" alt="TikTok"></a>
+      <a href="https://nguyenhungthinh.atlassian.net/jira/software/projects/SCRUM/summary"><img class="jira" src="../images/jira-brands-solid.svg" alt="Jira"></a>
+    </div>
+  </footer>
+  <div class="ending-section">
+    <hr class="end-line">
+    <div class="end-text">
+      <p>Browse by:Companies Jobs Locations Communities Recent Posts</p>
+      <p>Copyright © 2008-2025. <span class="highlight"><strong>Webtech</strong></span> LLC. "Webtech," "Worklife
+        Pro,"
+        "Bowls," and logo are proprietary trademarks
+        of Webtech.</p>
+        <a href="https://github.com/105553981/Group-assignment" target="_blank">Github Link</a>
+    </div>
   </div>
-</footer>
-<div class="ending-section">
-  <hr class="end-line">
-  <div class="end-text">
-    <p>Browse by:Companies Jobs Locations Communities Recent Posts</p>
-    <p>Copyright © 2008-2025. <span class="highlight"><strong>Webtech</strong></span> LLC. "Webtech," "Worklife
-      Pro,"
-      "Bowls," and logo are proprietary trademarks
-      of Webtech.</p>
-      <a href="https://github.com/105553981/Group-assignment" target="_blank">Github Link</a>
-  </div>
-</div>
-</form>
-</body>
-</html>
+  </form>
+  </body>
+  </html>
